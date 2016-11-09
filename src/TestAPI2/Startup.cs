@@ -40,6 +40,7 @@ namespace TestAPI2
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
 
+            services.AddCors();
             services.AddMvc();
 
             services.Configure<Settings>(options =>
@@ -60,6 +61,8 @@ namespace TestAPI2
             app.UseApplicationInsightsRequestTelemetry();
 
             app.UseApplicationInsightsExceptionTelemetry();
+
+            app.UseCors(builder => builder.AllowAnyOrigin());
 
             app.UseMvc();
         }

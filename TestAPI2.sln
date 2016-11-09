@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TestAPI2", "src\TestAPI2\TestAPI2.xproj", "{79EC16A6-A512-4595-BE37-68CE8B988415}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ClientTest", "src\ClientTest\ClientTest.xproj", "{DE6F459F-7B99-4800-9751-516D65E414AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,11 +24,16 @@ Global
 		{79EC16A6-A512-4595-BE37-68CE8B988415}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79EC16A6-A512-4595-BE37-68CE8B988415}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79EC16A6-A512-4595-BE37-68CE8B988415}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE6F459F-7B99-4800-9751-516D65E414AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE6F459F-7B99-4800-9751-516D65E414AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE6F459F-7B99-4800-9751-516D65E414AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE6F459F-7B99-4800-9751-516D65E414AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{79EC16A6-A512-4595-BE37-68CE8B988415} = {E3E6330E-416D-4F55-A1FE-9027F799D9FE}
+		{DE6F459F-7B99-4800-9751-516D65E414AF} = {E3E6330E-416D-4F55-A1FE-9027F799D9FE}
 	EndGlobalSection
 EndGlobal
