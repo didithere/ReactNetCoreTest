@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ClientTest.Controllers
 {
-    [EnableCors("AllowSpecificOrigin")]
     public class HomeController : Controller
     {
         // GET: /<controller>/

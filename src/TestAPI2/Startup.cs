@@ -62,7 +62,12 @@ namespace TestAPI2
 
             app.UseApplicationInsightsExceptionTelemetry();
 
-            app.UseCors(builder => builder.AllowAnyOrigin());
+            app.UseCors(builder => builder
+            .AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .Build()
+            );
 
             app.UseMvc();
         }

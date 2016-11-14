@@ -47,9 +47,11 @@ namespace TestAPI2.Controllers
 
         // POST api/notes
         [HttpPost]
-        public void Post([FromBody]string value)
+        public string Post([FromBody]string value)
         {
-            _noteRepository.AddNote(new Note() { Body = value, CreatedOn = DateTime.Now, UpdatedOn = DateTime.Now });
+            var note = new Note() { Id = Guid.NewGuid().ToString(), Body = value, CreatedOn = DateTime.Now, UpdatedOn = DateTime.Now };
+            _noteRepository.AddNote(note);
+            return JsonConvert.SerializeObject(note);
         }
 
         // PUT api/notes/5
@@ -60,6 +62,7 @@ namespace TestAPI2.Controllers
         }
 
         // DELETE api/notes/5
+        [HttpDelete("{id}")]
         public void Delete(string id)
         {
             _noteRepository.RemoveNote(id);

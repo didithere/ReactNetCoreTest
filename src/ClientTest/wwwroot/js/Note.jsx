@@ -2,10 +2,10 @@
     render: function () {
         return (
             <div className="note">
-                {this.props.body}
+                {this.props.children}
             </div>
             );
     }
-})
+});
 
 module.exports = Note;
